@@ -12,15 +12,16 @@ function whileLoop(number) {
   while (counts > 0){
     console.log(--counts);
   }
-  console.log ('done');
+  return ('done');
 }
 
-function maybeTrue() {
-  return Math.random() >= 0.5
-}
-
-do {
-  console.log('doo-bee-doo-bee-doo')
-} while (maybeTrue());
-
-maybeTrue()
+function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >=0.5;
+  }
+  do {
+    array.pop()
+  }
+  while (array.length > 0 && maybeTrue());
+  return array;
+} 
