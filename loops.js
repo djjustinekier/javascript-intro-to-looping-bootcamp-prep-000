@@ -1,4 +1,4 @@
-var eat = ['eat', 'this', 'freeze'];
+
 function forLoop(array) {
   for (i=0; i < 25; i++){
     var stringArr = "I am " + i + " strange loops."
@@ -7,4 +7,12 @@ function forLoop(array) {
   return array;
 }
 
-console.log(forLoop(eat))
+function whileLoop(number) {
+  var counts = number;
+  while (counts > 0){
+    console.log(--counts);
+  }
+  console.log ('done');
+}
+
+whileLoop(10)
